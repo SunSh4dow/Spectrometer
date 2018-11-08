@@ -12,7 +12,7 @@ namespace Spectrometer
     public class Detect
     {
         string usedPort = "COM16";
-
+        
         public string[] getPorts()
         {
             string[] ports = SerialPort.GetPortNames();
@@ -23,9 +23,7 @@ namespace Spectrometer
         {
             usedPort = s;
         }
-
-
-
+        
         // takes LED Number, returns noise reduced spectrometer data
         public double[] getData(int i)
         {
