@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.IO.Ports;
-using Thorlabs.CCS_Series;
+using Thorlabs.ccs.interop64;
 
 namespace Spectrometer
 {
@@ -21,7 +21,7 @@ namespace Spectrometer
 
         public void setPort(string s)
         {
-            usedPort = s;
+            usedPort = s; //
         }
         
         // takes LED Number, returns noise reduced spectrometer data
