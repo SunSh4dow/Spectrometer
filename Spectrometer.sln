@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spectrometer", "Spectrometer\Spectrometer.csproj", "{EB6A0DF0-A9FF-4220-BB1B-AF02ED45D443}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thorlabs.ccs.interop64", "Thorlabs\Thorlabs\Thorlabs.ccs.interop64.csproj", "{3294E520-961F-4247-B7AF-A1F2711A43E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,14 @@ Global
 		{EB6A0DF0-A9FF-4220-BB1B-AF02ED45D443}.Release|x64.Build.0 = Release|x64
 		{EB6A0DF0-A9FF-4220-BB1B-AF02ED45D443}.Release|x86.ActiveCfg = Release|x86
 		{EB6A0DF0-A9FF-4220-BB1B-AF02ED45D443}.Release|x86.Build.0 = Release|x86
+		{3294E520-961F-4247-B7AF-A1F2711A43E6}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{3294E520-961F-4247-B7AF-A1F2711A43E6}.Debug|x64.ActiveCfg = Debug|x64
+		{3294E520-961F-4247-B7AF-A1F2711A43E6}.Debug|x64.Build.0 = Debug|x64
+		{3294E520-961F-4247-B7AF-A1F2711A43E6}.Debug|x86.ActiveCfg = Debug|x64
+		{3294E520-961F-4247-B7AF-A1F2711A43E6}.Release|Any CPU.ActiveCfg = Release|x64
+		{3294E520-961F-4247-B7AF-A1F2711A43E6}.Release|x64.ActiveCfg = Release|x64
+		{3294E520-961F-4247-B7AF-A1F2711A43E6}.Release|x64.Build.0 = Release|x64
+		{3294E520-961F-4247-B7AF-A1F2711A43E6}.Release|x86.ActiveCfg = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

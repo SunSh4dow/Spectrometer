@@ -21,7 +21,18 @@ namespace Spectrometer
 
         public void setPort(string s)
         {
-            usedPort = s; //
+            usedPort = s;
+        }
+
+        public double[] Test(int l)
+        {
+            double[] Test = new double[3648];
+            System.Random random = new System.Random();
+            for (int i=0; i<3648; i++)
+            {
+                Test[i] = random.NextDouble();
+            }
+            return Test;//
         }
         
         // takes LED Number, returns noise reduced spectrometer data

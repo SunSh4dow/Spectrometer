@@ -75,13 +75,16 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="Thorlabs.ccs.interop64">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft.NET\Primary Interop Assemblies\Thorlabs.ccs.interop64.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Detect.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Thorlabs\Thorlabs\Thorlabs.ccs.interop64.csproj">
+      <Project>{3294e520-961f-4247-b7af-a1f2711a43e6}</Project>
+      <Name>Thorlabs.ccs.interop64</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
