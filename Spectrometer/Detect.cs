@@ -24,6 +24,7 @@ namespace Spectrometer
             usedPort = s;
         }
 
+        // returns a randomly filled array for testing with matlab
         public double[] Test(int l)
         {
             double[] Test = new double[3648];
@@ -32,7 +33,7 @@ namespace Spectrometer
             {
                 Test[i] = random.NextDouble();
             }
-            return Test;//
+            return Test;
         }
         
         // takes LED Number, returns noise reduced spectrometer data
@@ -56,7 +57,7 @@ namespace Spectrometer
             sp.Open();
 
             res = ccsSeries.setIntegrationTime(0.1); // 100ms
-            res = ccsSeries.startScan(); // single scan
+            res = ccsSeries.startScan(); // single scan for noise
             do
             {
                 res = ccsSeries.getDeviceStatus(out status);
